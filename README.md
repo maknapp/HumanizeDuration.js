@@ -1,6 +1,11 @@
-# Humanize Duration
+## Forked from
+https://github.com/EvanHahn/HumanizeDuration.js
 
-[![npm version](https://badge.fury.io/js/humanize-duration.svg)](https://npmjs.org/package/humanize-duration)
+* Added typescript declaration file
+* Changed export module type
+
+
+# Humanize Duration
 
 I have the time in milliseconds and I want it to become "30 minutes" or "3 days, 1 hour". Enter Humanize Duration!
 
@@ -8,10 +13,10 @@ I have the time in milliseconds and I want it to become "30 minutes" or "3 days,
 
 ## Installation
 
-This package is available as _humanize-duration_ on [npm](https://www.npmjs.com/package/humanize-duration) and Bower. You can also include the JavaScript file in the browser.
+This package is available as _@maknapp/humanize-duration_ on [npm](https://www.npmjs.com/package/@maknapp/humanize-duration). You can also include the JavaScript file in the browser.
 
 ```sh
-npm install humanize-duration
+npm install @maknapp/humanize-duration
 ```
 
 ## Basic usage
@@ -19,7 +24,7 @@ npm install humanize-duration
 With `require` (like in Node or with common build systems):
 
 ```js
-const humanizeDuration = require("humanize-duration");
+const humanizeDuration = require("@maknapp/humanize-duration");
 humanizeDuration(12000); // '12 seconds'
 ```
 
