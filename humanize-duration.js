@@ -2,7 +2,6 @@
 
 /* global define, module */
 
-(function () {
   // This has to be defined separately because of a bug: we want to alias
   // `gr` and `el` for backwards-compatiblity. In a breaking change, we can
   // remove `gr` entirely.
@@ -1278,14 +1277,6 @@
     return c % 10 === 1 && c % 100 !== 11;
   }
 
-  // We need to make sure we support browsers that don't have
-  // `Array.isArray`, so we define a fallback here.
-  var isArray =
-    Array.isArray ||
-    function (arg) {
-      return Object.prototype.toString.call(arg) === "[object Array]";
-    };
-
   function has(obj, key) {
     return Object.prototype.hasOwnProperty.call(obj, key);
   }
@@ -1302,13 +1293,4 @@
 
   humanizeDuration.humanizer = humanizer;
 
-  if (typeof define === "function" && define.amd) {
-    define(function () {
-      return humanizeDuration;
-    });
-  } else if (typeof module !== "undefined" && module.exports) {
-    module.exports = humanizeDuration;
-  } else {
-    this.humanizeDuration = humanizeDuration;
-  }
-})(); // eslint-disable-line semi
+module.exports.humanizeDuration = humanizeDuration;
