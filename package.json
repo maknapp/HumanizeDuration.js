@@ -35,6 +35,7 @@
   "description": "Convert millisecond durations to English and many other languages.",
   "homepage": "https://github.com/maknapp/HumanizeDuration.js",
   "main": "humanize-duration.js",
+  "types": "humanize-duration.d.ts",
   "scripts": {
     "pretest": "npm run lint",
     "lint": "prettier --check \"**/*.{js,json,md}\" && eslint \"**/*.js\"",
