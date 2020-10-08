@@ -1,9 +1,10 @@
 ## Forked from
+
 https://github.com/EvanHahn/HumanizeDuration.js
 
 * Added typescript declaration file
 * Changed export module type
-
+* Removed all languages but en
 
 # Humanize Duration
 
