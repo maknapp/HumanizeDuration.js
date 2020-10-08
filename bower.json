@@ -1,5 +1,5 @@
 {
-  "name": "humanize-duration",
+  "name": "@maknapp/humanize-duration",
   "authors": [
     "Evan Hahn <me@evanhahn.com> (https://evanhahn.com)",
     "Óli Tómas Freysson (https://github.com/olitomas)",
@@ -34,7 +34,7 @@
   "version": "3.24.0",
   "description": "Convert millisecond durations to English and many other languages.",
   "main": "humanize-duration.js",
-  "homepage": "https://github.com/EvanHahn/HumanizeDuration.js",
+  "homepage": "https://github.com/maknapp/HumanizeDuration.js",
   "keywords": [
     "humanize",
     "duration",
@@ -50,6 +50,6 @@
   "ignore": ["**/.*", "node_modules", "bower_components", "test", "tests"],
   "repository": {
     "type": "git",
-    "url": "git://github.com/EvanHahn/HumanizeDuration.js.git"
+    "url": "git://github.com/maknapp/HumanizeDuration.js.git"
   }
 }
